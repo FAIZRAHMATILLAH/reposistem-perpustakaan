@@ -1,0 +1,13 @@
+const buku = [
+    {judul: "Pemrograman Web Dasar", pengarang: "Andi"},
+    {judul: "Algoritma dan Struktur Data", pengarang: "Budi"},
+    {judul: "Jaringan Komputer", pengarang: "Citra"}
+];
+
+let html = "<h3>Daftar Buku:</h3><ul>";
+buku.forEach(b => {
+    html += `<li><strong>${b.judul}</strong> - ${b.pengarang}</li>`;
+});
+html += "</ul>";
+
+document.getElementById("buku").innerHTML = html;
